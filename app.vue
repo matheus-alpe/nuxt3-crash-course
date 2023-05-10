@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const name = ''
+const message = ref('hello world')
 </script>
 
-<template />
+<template>
+  <h1>{{ message }}</h1>
+</template>

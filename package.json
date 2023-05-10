@@ -8,13 +8,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",
@@ -25,5 +20,11 @@
     "nuxt": "^3.4.3",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
   }
 }
