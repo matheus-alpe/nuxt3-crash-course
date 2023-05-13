@@ -1,18 +1,18 @@
 <template>
-  <header>
-    <nav>
-      <NuxtLink to="/products">
+  <header class="shadow-sm bg-white">
+    <nav class="container mx-auto p-4">
+      <NuxtLink to="/products" class="font-bold">
         Nuxt Dojo Merch
       </NuxtLink>
     </nav>
   </header>
 
-  <main>
+  <main class="container mx-auto p-4">
     <slot />
   </main>
 
-  <footer>
-    <ul>
+  <footer class="container mx-auto p-4 flex justify-between border-t-2">
+    <ul class="flex gap-4 ">
       <li>
         <NuxtLink to="/">
           Home
@@ -33,14 +33,3 @@
     </ul>
   </footer>
 </template>
-
-<style>
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-.router-link-exact-active {
-  color: #12b488;
-}
-</style>

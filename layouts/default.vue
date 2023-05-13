@@ -3,13 +3,13 @@
 </script>
 
 <template>
-  <header>
-    <nav>
-      <NuxtLink to="/">
+  <header class="shadow-sm bg-white">
+    <nav class="container mx-auto p-4 flex justify-between">
+      <NuxtLink to="/" class="font-bold">
         Nuxt Dojo
       </NuxtLink>
 
-      <ul>
+      <ul class="flex gap-4">
         <li>
           <NuxtLink to="/">
             Home
@@ -23,7 +23,7 @@
         </li>
 
         <li>
-          <NuxtLink to="/products">
+          <NuxtLink to="/products" class="btn">
             Products
           </NuxtLink>
         </li>
@@ -31,18 +31,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container mx-auto p-4">
     <slot />
   </main>
 </template>
-
-<style>
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-.router-link-exact-active {
-  color: #12b488;
-}
-</style>

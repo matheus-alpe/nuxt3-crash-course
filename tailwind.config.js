@@ -1,0 +1,3 @@
+/*
+  Enables tailwind intellisense.
+*/
