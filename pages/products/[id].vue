@@ -8,9 +8,5 @@ const { data: product } = await useFetch<Product>(`https://fakestoreapi.com/prod
 </script>
 
 <template>
-  <h1>
-    {{ product?.title }}
-    {{ product?.price }}
-    {{ product?.id }}
-  </h1>
+  <ProductDetails v-if="product" :product="product" />
 </template>
