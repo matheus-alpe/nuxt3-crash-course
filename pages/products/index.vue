@@ -13,7 +13,7 @@ useHead({
   ],
 })
 
-const { data: products } = await useFetch<Product[]>('https://fakestoreapi.com/products')
+const { data: products } = await useFetch('/api/products')
 </script>
 
 <template>
