@@ -3,6 +3,16 @@ definePageMeta({
   layout: 'store',
 })
 
+useHead({
+  title: 'Merch |',
+  meta: [
+    {
+      name: 'description',
+      content: 'Buy our merch',
+    },
+  ],
+})
+
 const { data: products } = await useFetch<Product[]>('https://fakestoreapi.com/products')
 </script>
 

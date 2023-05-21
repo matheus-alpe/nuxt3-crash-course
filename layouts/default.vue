@@ -29,7 +29,7 @@
         </li>
 
         <li>
-          <NuxtLink to="/products/abc" class="btn">
+          <NuxtLink to="/products/abc">
             Product abc
           </NuxtLink>
         </li>

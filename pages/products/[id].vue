@@ -13,6 +13,17 @@ if (!product.value) {
     fatal: true,
   })
 }
+else {
+  useHead({
+    title: `${product.value.title} |`,
+    meta: [
+      {
+        name: 'description',
+        content: product.value.description,
+      },
+    ],
+  })
+}
 </script>
 
 <template>

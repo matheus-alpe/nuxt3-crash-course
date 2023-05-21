@@ -33,6 +33,11 @@ defineProps<{
         <p class="mb-7">
           {{ product.description }}
         </p>
+
+        <button class="btn flex gap-2 items-center justify-center">
+          <i class="material-icons">add_shopping_cart</i>
+          <span>Add to cart</span>
+        </button>
       </div>
     </div>
   </div>
