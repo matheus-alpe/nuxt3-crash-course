@@ -4,7 +4,7 @@ definePageMeta({
 })
 
 const { params } = useRoute()
-const { data: product } = await useFetch<Product>(`https://fakestoreapi.com/products/${params.id}`)
+const { data: product } = await useFetch<Product>(`/api/products/${params.id}`)
 
 if (!product.value) {
   throw createError({

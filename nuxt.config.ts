@@ -23,6 +23,10 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    storeApi: process.env.STORE_API,
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
