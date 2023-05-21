@@ -5,6 +5,14 @@ definePageMeta({
 
 const { params } = useRoute()
 const { data: product } = await useFetch<Product>(`https://fakestoreapi.com/products/${params.id}`)
+
+if (!product.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Product not found',
+    fatal: true,
+  })
+}
 </script>
 
 <template>

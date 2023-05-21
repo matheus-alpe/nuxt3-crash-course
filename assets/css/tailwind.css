@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+#__nuxt {
+  @apply h-full;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
 body {
   @apply bg-gray-50;
 }
